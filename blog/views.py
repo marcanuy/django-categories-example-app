@@ -24,3 +24,7 @@ class ItemsByCategoryView(generic.ListView):
         context = super().get_context_data(**kwargs)
         context['category'] = self.category
         return context
+
+class ItemDetailView(generic.DetailView):
+    model = Item
+    template_name = 'blog/item_detail.html'

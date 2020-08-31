@@ -42,7 +42,7 @@ class Item(models.Model):
       kwargs = {
         'slug': self.slug
       }
-      return reverse('items-by-category', kwargs=kwargs)
+      return reverse('item-detail', kwargs=kwargs)
 
     def save(self, *args, **kwargs):
       if not self.slug:

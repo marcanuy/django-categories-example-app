@@ -1,0 +1,16 @@
+{% extends "blog/base.html" %} 
+{% load mptt_tags %}
+
+{% block title %}{{object}} detail{% endblock %}
+
+{% block content %}
+
+<div class="container">
+    <h1>{{object}}</h1>
+
+    {% include "blog/_breadcrumbs.html" with ancestors=object.category.get_ancestors object=object%}
+
+</div>
+
+
+{% endblock %}
