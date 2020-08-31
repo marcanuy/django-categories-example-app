@@ -1,0 +1,17 @@
+dj-database-url==0.5.0
+Django==2.2.13
+django-extensions==2.1.5
+django-js-asset==1.2.2
+django-mptt==0.11.0
+factory-boy==2.12.0
+Faker==2.0.0
+gunicorn==20.0.4
+pkg-resources==0.0.0
+psycopg2-binary==2.8.4
+pydotplus==2.0.2
+pyparsing==2.3.1
+python-dateutil==2.8.0
+pytz==2019.2
+six==1.12.0
+sqlparse==0.3.0
+text-unidecode==1.2
