@@ -4,6 +4,8 @@ tree structure and breadcrumbs in each page.
 
 This app shows the concepts explained at: https://simpleit.rocks/python/django/categories-with-django-cbv
 
+And the demo at: https://django-categories-example-app.herokuapp.com/
+
 # Installation
 
 ~~~ bash
