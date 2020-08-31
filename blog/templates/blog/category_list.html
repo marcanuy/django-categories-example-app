@@ -21,7 +21,14 @@
 	    {% endrecursetree %}
 	</ul>
     </div>
+    <h2>Item list</h2>
+    <ul>
+	{% for item in items %}
+	<li>{{item}}: <a href="{{item.get_absolute_url}}">{{item.get_absolute_url}}</a></li>
+	{% endfor %}
+    </ul>
 </div>
 
+{% include "blog/_breadcrumbs.html"%}
 
 {% endblock %}

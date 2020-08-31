@@ -6,6 +6,11 @@ class CategoryListView(generic.ListView):
     model = Category
     template_name = "blog/category_list.html"
 
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['items'] = Item.objects.all()
+        return context
+
 class ItemsByCategoryView(generic.ListView):
     ordering = 'id'
     paginate_by = 10
